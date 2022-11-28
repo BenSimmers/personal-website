@@ -1,5 +1,9 @@
 import React from "react";
 import "./App.css";
+import AboutMe from "./components/AboutMe";
+import ContactMe from "./components/ContactMe";
+import Skills from "./components/Skills";
+
 import { TypeAnimation } from "react-type-animation";
 
 const Title = () => {
@@ -39,6 +43,16 @@ function App() {
       <div className="Title">
         <Title />
       </div>
+      <div className="AboutMe">
+        <AboutMe />
+      </div>
+      <div className="Skills">
+        <Skills />
+      </div>
+      <div className="ContactMe">
+        <ContactMe />
+      </div>
+      
     </div>
   );
 }
