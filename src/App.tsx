@@ -21,7 +21,7 @@ const Title = () => {
         sequence={[
           `Hi, I'm Ben Simmers`,
           2000, // Waits 2s
-        
+
           `I work as full stack web developer`,
           2000, // Waits 2s
           //got to a new line
@@ -43,16 +43,17 @@ function App() {
       <div className="Title">
         <Title />
       </div>
-      <div className="AboutMe">
-        <AboutMe />
-      </div>
-      <div className="Skills">
-        <Skills />
-      </div>
-      <div className="ContactMe">
-        <ContactMe />
-      </div>
-      
+      <main className="mt-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="AboutMe">
+          <AboutMe />
+        </div>
+        <div className="Skills">
+          <Skills />
+        </div>
+        <div className="ContactMe">
+          <ContactMe />
+        </div>
+      </main>
     </div>
   );
 }
