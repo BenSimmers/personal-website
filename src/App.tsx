@@ -24,8 +24,7 @@ const Title = () => {
 
           `I work as full stack web developer`,
           2000, // Waits 2s
-          //got to a new line
-          `and currently studying Computer Science at QUT`,
+          `and studying Computer Science at QUT`,
           2000,
         ]}
         wrapper="div"
