@@ -47,9 +47,11 @@ function App() {
           <AboutMe />
         </div>
         <div className="Skills">
+          <br />  
           <Skills />
         </div>
         <div className="ContactMe">
+          <br />
           <ContactMe />
         </div>
       </main>

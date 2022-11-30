@@ -14,7 +14,7 @@ export default function Skills(){
 
                 <div className="flex flex-col items-center justify-between mt-5">
                     <p className="mt-2 text-sm text-gray-500">
-                        
+                        Python, Java, C#, C, JavaScript, HTML, CSS, TypeScript, SQL, Assembly
                     </p>
                 </div>
             </div>
@@ -22,17 +22,14 @@ export default function Skills(){
             <div className="flex flex-col p-5 bg-white rounded-lg shadow-lg ">
                 <div className="flex items-center justify-center w-12 h-12 mx-auto rounded-md text-black">
                     Frameworks
-        
-
-                    </div>
-                    <div className="flex flex-col items-center justify-between mt-5">
-                        <p className="mt-2 text-sm text-gray-500">
-                            {/* show a photo of Flask */}
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/1200px-Flask_logo.svg.png" alt="Flask" width="100" height="100"/>
-                        </p>
-
-                    </div>
                 </div>
+                
+                <div className="flex flex-col items-center justify-between mt-5">
+                    <p className="mt-2 text-sm text-gray-500">
+                    React, Flask, Jinja, Tailwind, Bootstrap, Express, Node, Material UI
+                    </p>
+                </div>
+            </div>
 
 
 
@@ -44,7 +41,7 @@ export default function Skills(){
                     </div>
                     <div className="flex flex-col items-center justify-between mt-5">
                         <p className="mt-2 text-sm text-gray-500">
-                            
+                        Git, GitHub, Docker, AWS, Heroku, MongoDB, MySQL, PostgreSQL, SQLite, Linux, Windows, Mac
                         </p>
 
                     </div>
