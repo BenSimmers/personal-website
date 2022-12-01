@@ -26,10 +26,7 @@ export default function AboutMe() {
         </div>
         <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
           <div className="col-span-2 row-span-2 bg-transparent rounded-lg shadow-lg overflow-hidden">
-                Where I'm From
                 <iframe className="rounded"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d453481.3003842029!2d152.71301028197632!3d-27.381253325856218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b91579aac93d233%3A0x402a35af3deaf40!2sBrisbane%20QLD!5e0!3m2!1sen!2sau!4v1669720558116!5m2!1sen!2sau" width="600" height="450"  loading="lazy" >
-
-
                 </iframe>
             </div>
 
