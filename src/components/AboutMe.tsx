@@ -2,7 +2,7 @@ const features = [
   { name: 'Currently Learning', description: 'Rust and ASP.NET' },
   { name: 'My Interests', description: 'Video games, programming, problem solving, reading, football, Film' },
   { name:  'Skills', description: 'JavaScript, TypeScript, Python, C#, C, HTML, CSS, Docker, Git, SQL, React, Express, PostgreSQL, AWS' },
-  { name: 'Things I Want to Learn', description: 'Go, Flutter'},
+  { name: 'What I Want to Learn', description: 'Go, Flutter, Swift'},
 ]
 
 export default function AboutMe() {
