@@ -3,6 +3,7 @@ import React from "react";
 export default function ContactMe(){
   return(
     <>
+    <div style={{paddingTop: 30}}/>
       <h2 className="text-3xl font-bold tracking-tight text-white-900 sm:text-4xl">Contact Me</h2>
       {/* 3 columns */}
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
