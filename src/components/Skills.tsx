@@ -15,12 +15,12 @@ export default function Skills(props: any) {
 
       <Card
         title="Frameworks"
-        description="React.js, React Native, Flask, Jinja, Tailwind, Bootstrap, Express.js, Node, Material UI"
+        description="React.js, React Native, Flask, Jinja, Tailwind Css, Bootstrap, Express.js, Node, Material UI"
       />
 
       <Card
         title="Tools"
-        description="Git, GitHub, Docker, AWS, Figma Azure, Heroku, Linux, Windows, Mac"
+        description="Git, GitHub, Docker, AWS, Figma, Azure, Heroku, Linux, Windows, Mac"
       />
     </>
   );

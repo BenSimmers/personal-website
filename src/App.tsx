@@ -39,7 +39,7 @@ const Title = () => {
 function App() {
   return (
     <div className="App">
-      <div className="Title">
+      <div className="leading-none">
         <Title />
       </div>
       <main className="mt-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
