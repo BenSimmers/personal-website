@@ -22,7 +22,7 @@ const Title = () => {
           `Hi, I'm Ben Simmers`,
           2000, // Waits 2s
 
-          `I work as full stack web developer`,
+          `I work as a full stack web developer`,
           2000, // Waits 2s
           `and studying Computer Science at QUT`,
           2000,
