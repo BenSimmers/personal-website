@@ -30,7 +30,7 @@ const Title = () => {
         wrapper="div"
         cursor={true}
         repeat={Infinity}
-        style={{ fontSize: "4em", padding: 5 }}
+        style={{ fontSize: "4em", padding: 5 }}      
       />
     </div>
   );

@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "http://bensimmers.github.io/personal-website",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
