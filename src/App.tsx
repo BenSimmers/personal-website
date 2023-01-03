@@ -8,12 +8,13 @@ import { TypeAnimation } from "react-type-animation";
 
 const Title = () => {
   return (
+    <>
     <div
       style={{
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "100vh",
+        height: "95vh",
         padding: 5,
       }}
     >
@@ -33,6 +34,9 @@ const Title = () => {
         style={{ fontSize: "4em", padding: 5 }}      
       />
     </div>
+    <p className="text">Scroll down to see more...</p>
+
+    </>
   );
 };
 
