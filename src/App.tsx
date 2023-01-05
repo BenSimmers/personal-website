@@ -6,6 +6,8 @@ import Skills from "./components/Skills";
 
 import { TypeAnimation } from "react-type-animation";
 
+import { BrowserRouter, Route, Link } from "react-router-dom";
+
 const Title = () => {
   return (
     <>
@@ -14,7 +16,7 @@ const Title = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "95vh",
+        height: "93vh",
         padding: 5,
       }}
     >
@@ -31,11 +33,10 @@ const Title = () => {
         wrapper="div"
         cursor={true}
         repeat={Infinity}
-        style={{ fontSize: "4em", padding: 5 }}      
+        style={{ fontSize: "4em", padding: 5 }}
       />
     </div>
-    <p className="text">Scroll down to see more...</p>
-
+    <p className="text" style={{marginBottom: "5px"}}>Scroll down to learn more about me</p>
     </>
   );
 };
@@ -43,10 +44,10 @@ const Title = () => {
 function App() {
   return (
     <div className="App">
-      <div className="leading-none">
-        <Title />
-      </div>
       <main className="mt-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="leading-none">
+          <Title />
+        </div>
         <div className="AboutMe">
           <AboutMe />
         </div>
@@ -56,8 +57,6 @@ function App() {
         <div className="ContactMe">
           <ContactMe />
         </div>
-
-
       </main>
     </div>
   );
