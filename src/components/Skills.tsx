@@ -6,7 +6,7 @@ export default function Skills(props: any) {
   const skills = [
     {
       title: "Languages",
-      description: "Python, Java, C#, C, JavaScript, HTML, CSS, TypeScript, SQL, Assembly, PostGreSQL, SQLite",
+      description: "Python, Java, C#, C, JavaScript, HTML, CSS, TypeScript, SQL, PostGreSQL, SQLite",
     },
     {
       title: "Frameworks",
@@ -31,6 +31,7 @@ export default function Skills(props: any) {
             </h5>
             <p className="text-2xl text-gray-600 dark:text-gray-600 py-3">
               {skill.description}
+              <div style={{ paddingTop: 25 }} />
             </p>
           </div>
         </div>
