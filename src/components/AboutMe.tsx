@@ -3,7 +3,7 @@ const features = [
   {
     name: "My Interests",
     description:
-      "Video games, programming, problem solving, reading, football, Film",
+      "Video games, programming, problem solving, reading, football, film",
   },
   {
     name: "Skills",

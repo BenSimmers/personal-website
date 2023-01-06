@@ -6,11 +6,11 @@ export default function Skills(props: any) {
   const skills = [
     {
       title: "Languages",
-      description: "Python, Java, C#, C, JavaScript, HTML, CSS, TypeScript, SQL, Assembly, PosGresSQL, SQLite",
+      description: "Python, Java, C#, C, JavaScript, HTML, CSS, TypeScript, SQL, Assembly, PostGreSQL, SQLite",
     },
     {
       title: "Frameworks",
-      description: "React.js, React Native, Flask, Jinja, Tailwind Css, Bootstrap, Express.js, Node, Material UI",
+      description: "React.js, React Native, Flask, Jinja, Tailwind CSS, Bootstrap, Express.js, Node, Material UI",
     },
     {
       title: "Tools",
