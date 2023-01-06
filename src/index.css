@@ -6,7 +6,6 @@
 :root {
   font-family: Right Grotesk, Inter, Avenir, Helvetica, Arial, sans-serif;
 
-
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -20,9 +19,6 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
-
-
 
 /* see more text animation */
 .text {
@@ -112,3 +108,30 @@ button:active {
   box-shadow: 15px 15px 0 -2.5px #fff, 15px 15px 0 0 #000;
 }
 
+
+
+.title-card {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(90deg, #FBC701, #f68a37, #FBC701);
+  background-size: 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+
+  border-radius: 5px;
+  border: 3px solid black;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  -webkit-box-shadow: 12px 12px 2px 1px rgba(0, 0, 0);
+          box-shadow: 12px 12px 2px 1px rgba(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ }
+
+
+ .title-card:hover {
+  -webkit-box-shadow: -12px 12px 2px -1px rgba(0, 0, 0);
+          box-shadow: -12px 12px 2px -1px rgba(0, 0, 0);
+ }

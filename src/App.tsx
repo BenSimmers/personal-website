@@ -6,8 +6,6 @@ import Skills from "./components/Skills";
 
 import { TypeAnimation } from "react-type-animation";
 
-import { BrowserRouter, Route, Link } from "react-router-dom";
-
 const Title = () => {
   return (
     <>
@@ -16,39 +14,59 @@ const Title = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "93vh",
-        padding: 5,
+        // height: "100vh",
+
       }}
     >
       <TypeAnimation
         sequence={[
           `Hi, I'm Ben Simmers`,
-          2000, // Waits 2s
-
+          2000,
           `I work as a full stack web developer`,
-          2000, // Waits 2s
-          `and studying Computer Science at QUT`,
+          2000,
+          `and studying Computer Science`,
           2000,
         ]}
         wrapper="div"
         cursor={true}
         repeat={Infinity}
-        style={{ fontSize: "4em", padding: 5 }}
+        style={{ fontSize: "3em", padding: "10px" }}
       />
     </div>
-    <p className="text" style={{marginBottom: "5px"}}>Scroll down to learn more about me</p>
+    {/* <p className="text" style={{marginBottom: "5px"}}>Scroll down to learn more about me</p> */}
+
+
     </>
   );
 };
+
+const InitialPage = () => {
+  return (
+    <div >
+      <main className="">
+        <div>
+        <div className="title-card">
+          <Title />
+        </div>
+        </div>
+      </main>
+    </div>
+  );
+};
+
+
+
 
 function App() {
   return (
     <div className="App">
       <main className="mt-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="leading-none">
-          <Title />
+      <div className="leading-none">
+          <InitialPage />
         </div>
+        
         <div className="AboutMe">
+        <div style={{ marginBottom: "20px" }}></div>
           <AboutMe />
         </div>
         <div className="Skills">
