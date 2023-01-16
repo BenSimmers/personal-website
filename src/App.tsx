@@ -24,7 +24,7 @@ const Title = () => {
           2000,
           `I work as a full stack web developer`,
           2000,
-          `and studying Computer Science`,
+          `and study Computer Science`,
           2000,
         ]}
         wrapper="div"
@@ -62,17 +62,19 @@ function App() {
     <div className="App">
       <main className="mt-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div className="leading-none">
+        
           <InitialPage />
         </div>
-        
         <div className="AboutMe">
-        <div style={{ marginBottom: "20px" }}></div>
+        <div style={{ marginBottom: "50px" }}></div>
           <AboutMe />
         </div>
         <div className="Skills">
+        <div style={{ marginBottom: "50px" }}></div>
           <Skills />
         </div>
         <div className="ContactMe">
+        <div style={{ marginBottom: "50px" }}></div>
           <ContactMe />
         </div>
       </main>

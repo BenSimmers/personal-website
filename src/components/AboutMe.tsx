@@ -1,27 +1,27 @@
 const features = [
-  { name: "Currently Learning", description: "Rust and ASP.NET" },
+  { name: "Currently Learning", 
+    description: "Rust and ASP.NET"
+  },
   {
     name: "My Interests",
-    description:
-      "Video games, programming, problem solving, reading, football, film",
+    description: "Video games, programming, problem solving, reading, football, film",
   },
   {
     name: "Skills",
-    description:
-      "JavaScript, TypeScript, Python, C#, C, HTML, CSS, Docker, Git, SQL, React, Express, PostgreSQL, AWS",
+    description: "JavaScript, TypeScript, Python, C#, C, HTML, CSS, Docker, Git, SQL, React, Express, PostgreSQL, AWS",
   },
-  { name: "What I Plan to Learn", description: "Go, Flutter, Swift" },
+  { 
+    name: "What I Plan to Learn", 
+    description: "Go, Flutter, Swift" 
+  },
 ];
 
-//#726CE5
-
-const introduction =
-  "I'm a full-stack web developer from Brisbane, Australia with a passion for learning and building new things. Currently I'm enrolled at QUT while studying a Bachelor of Information Technology, majoring in Computer Science with a minor in IoT/Mobile Technologies.";
+const introduction = "I'm a full-stack web developer from Brisbane, Australia with a passion for learning and building new things. Currently I'm enrolled at QUT while studying a Bachelor of Information Technology, majoring in Computer Science with a minor in IoT/Mobile Technologies.";
 
 export default function AboutMe() {
   return (
     <div>
-      <h2 className="text-3xl font-bold tracking-tight text-white-900 sm:text-4xl">About Me</h2>
+      <h2 className="text-3xl font-bold tracking-tight text-white-900 sm:text-5xl">About Me</h2>
       <p className="mt-4 text-lg text-black rounded outline outline-[3px] p-3 bg-white outline-black ">
         <div style={{paddingTop: "10px"}}/>
         {introduction}

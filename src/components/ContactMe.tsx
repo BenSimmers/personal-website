@@ -6,7 +6,7 @@ export default function ContactMe(){
   return(
     <>
     <div style={{paddingTop: 30}}/>
-    <h2 className="text-3xl font-bold tracking-tight text-white-900 sm:text-4xl">Contact Me</h2>
+    <h2 className="text-3xl font-bold tracking-tight text-white-900 sm:text-5xl">Contact Me</h2>
 
     <div style={{paddingTop: 30}}/>
       {/* 3 columns */}

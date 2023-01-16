@@ -20,7 +20,7 @@ export default function Skills(props: any) {
 
   return (
     <>
-      <h2 className="text-3xl font-bold tracking-tight text-white-900 sm:text-4xl">My Skills</h2>
+      <h2 className="text-3xl font-bold tracking-tight text-white-900 sm:text-5xl">My Skills</h2>
       {skills.map((skill) => (
         <>
         <div style={{ paddingTop: 35 }} />
