@@ -3,6 +3,7 @@ import "./App.css";
 import AboutMe from "./components/AboutMe";
 import ContactMe from "./components/ContactMe";
 import Skills from "./components/Skills";
+import TimeLine from "./components/TimeLine";
 
 import { TypeAnimation } from "react-type-animation";
 
@@ -68,6 +69,11 @@ function App() {
         <div className="AboutMe">
         <div style={{ marginBottom: "50px" }}></div>
           <AboutMe />
+        </div>
+        <div className="TimeLine">
+        <div style={{ marginBottom: "50px" }}></div>
+
+          <TimeLine />
         </div>
         <div className="Skills">
         <div style={{ marginBottom: "50px" }}></div>

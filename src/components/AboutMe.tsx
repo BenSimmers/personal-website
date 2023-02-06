@@ -20,7 +20,7 @@ const introduction = "I'm a full-stack web developer from Brisbane, Australia wi
 
 export default function AboutMe() {
   return (
-    <div>
+    <div className="">
       <h2 className="text-3xl font-bold tracking-tight text-white-900 sm:text-5xl">About Me</h2>
       <p className="mt-4 text-lg text-black rounded outline outline-[3px] p-3 bg-white outline-black ">
         <div style={{paddingTop: "10px"}}/>
