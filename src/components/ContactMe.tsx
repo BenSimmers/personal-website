@@ -14,21 +14,21 @@ export default function ContactMe(){
         {/* Column 1 */}
 
         <div className="col-span-1">
-          <button>
+          <button className="button-contact">
             <a href="https://github.com/BenSimmers">Github</a>
           </button>
         </div>
 
         {/* Column 2 */}
         <div className="col-span-1">
-          <button>
+          <button className="button-contact">
             <a href="https://www.linkedin.com/in/benjamin-simmers-45385b236/">LinkedIn</a>
           </button>
         </div>
 
         {/* Column 3 */}
         <div className="col-span-1">
-          <button>
+          <button className="button-contact">
             <a href="mailto:bej1380@gmail.com">Email</a>
           </button>
         </div>
