@@ -25,21 +25,21 @@ function Navigation() {
             </div>
             <div className="hidden md:block">
               <div className="flex items-center">
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   className="ml-4 px-3 py-2 text-gray-600 font-medium rounded-md ease-in-out duration-150 hover:transform hover:scale-110 hover:drop-shadow-3xl hover:animate-wiggle"
                 >
                   Home
-                </a>
-                <a
-                  href="/portfolio"
+                </Link>
+                <Link
+                  to="/portfolio"
                   // className="ml-4 px-3 py-2 text-gray-600 font-medium rounded-md ease-in-out duration-150 hover:transform hover:scale-110 hover:drop-shadow-3xl"
                   //add a wiggle animation to the link
                   className="ml-4 px-3 py-2 text-gray-600 font-medium rounded-md ease-in-out duration-150 hover:transform hover:scale-110 hover:drop-shadow-3xl hover:animate-wiggle"
 
                 >
                   Portfolio
-                </a>
+                </Link>
               </div>
             </div>
             <div className="-mr-2 flex md:hidden">
@@ -94,18 +94,18 @@ function Navigation() {
           id="mobile-menu"
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a
-              href="/"
+            <Link
+              to="/"
               className="ml-4 px-3 py-2 text-gray-600 font-medium rounded-md ease-in-out duration-150 hover:transform hover:scale-110 hover:drop-shadow-3xl hover:animate-wiggle"
               >
               Home
-            </a>
-            <a
-              href="/portfolio"
+            </Link>
+            <Link
+              to="/portfolio"
               className="ml-4 px-3 py-2 text-gray-600 font-medium rounded-md ease-in-out duration-150 hover:transform hover:scale-110 hover:drop-shadow-3xl hover:animate-wiggle"
               >
               Portfolio
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
