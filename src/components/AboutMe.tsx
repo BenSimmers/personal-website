@@ -8,11 +8,11 @@ type Features = {
 
 const features: Features[] = [
   { name: "Currently Learning", 
-    description: "Rust and ASP.NET"
+    description: "Rust and ASP.NET, F#, Arm Assembly"
   },
   {
     name: "My Interests",
-    description: "Video games, programming, problem solving, reading, football, film",
+    description: "Games, programming, solving interesting problems, reading, football, film",
   },
   {
     name: "Skills",
