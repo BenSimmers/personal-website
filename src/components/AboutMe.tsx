@@ -1,4 +1,12 @@
-const features = [
+
+import React from "react";
+
+type Features = {
+  name: string;
+  description: string;
+};
+
+const features: Features[] = [
   { name: "Currently Learning", 
     description: "Rust and ASP.NET"
   },

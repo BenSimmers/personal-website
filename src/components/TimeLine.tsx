@@ -5,7 +5,13 @@ import { BookOpenIcon } from "@heroicons/react/outline";
 
 export default function TimeLine() {
 
-  const timeLineItems = [
+  type TimeLineItems = {
+    title: string;
+    date: string;
+    content: string;
+  };
+
+  const timeLineItems : TimeLineItems[] = [
     {
       title: "Duty Manager & Retail Assistant",
       date: "May 2020 - January 2023",
@@ -23,11 +29,8 @@ export default function TimeLine() {
       
     },
   ];
-
-
   return(
     <div>
-
     <h2 className="text-3xl font-bold tracking-tight text-white-900 sm:text-5xl">My Timeline</h2>
     <div style={{paddingTop: 30}}/>
       <ol className="items-center sm:flex outline p-6 rounded shadow bg-blue-500">
