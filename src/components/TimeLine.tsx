@@ -25,7 +25,7 @@ export default function TimeLine() {
     {
       title: "Working as a Full Stack Developer",
       date: "June 2022 - Present",
-      content: "Junior developer and UX designer at TestLab360. Contributed and maintaining full stack applications with Node, TypeScript."
+      content: "Junior developer and UX designer at TestLab360. Contributing and maintaining full stack applications with various technologies"
       
     },
   ];
