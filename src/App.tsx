@@ -9,8 +9,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import NotFound from "./components/404";
 import { useState } from "react";
 import Portfolio from "./components/Portfolio";
-
-
+import { Reading } from "./components/Reading";
 function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -175,9 +174,15 @@ function Home() {
         </div>
         <div className="TimeLine">
           <div style={{ marginBottom: "50px" }}></div>
-
           <TimeLine />
         </div>
+
+        <div className="Reading">
+          <div style={{ marginBottom: "50px" }}></div>
+          <Reading />
+        </div>
+
+
         <div className="Skills">
           <div style={{ marginBottom: "50px" }}></div>
           <Skills />
