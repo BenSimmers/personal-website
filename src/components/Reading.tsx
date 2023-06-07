@@ -21,7 +21,7 @@ export const Reading = (): JSX.Element => {
       title: "Zig Language",
     },
     {
-      title: "Dioxus Rust Web Framework",
+      title: "Refactoring UI",
     },
     {
       title: "The Silmarillion",
