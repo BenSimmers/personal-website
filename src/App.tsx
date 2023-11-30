@@ -11,10 +11,7 @@ const Footer = () => (
   <footer className="bottom-0">
     <div>
       <div className="sm:flex sm:items-center sm:justify-between">
-        <a
-          href="https://flowbite.com/"
-          className="flex items-center sm:mb-0 space-x-3 rtl:space-x-reverse"
-        >
+        <a className="flex items-center sm:mb-0 space-x-3 rtl:space-x-reverse">
           <span className="self-center text-l font-semibold whitespace-nowrap">
             Ben
           </span>
@@ -69,13 +66,15 @@ export const Nav = () => {
             <div className="flex items-center space-x-4">
               <WavyLink
                 to="/"
+                duration={1000}
                 color="#FFBC42"
                 className="ml-4 px-3 py-2 text-gray-600 font-medium rounded-md ease-in-out duration-150 hover:transform hover:scale-110 hover:drop-shadow-3xl hover:animate-wiggle"
               >
                 Home
               </WavyLink>
               <WavyLink
-                direction="down"
+                direction="up"
+                duration={1000}
                 to="/about"
                 color="#73D2DE"
                 className="ml-4 px-3 py-2 text-gray-600 font-medium rounded-md ease-in-out duration-150 hover:transform hover:scale-110 hover:drop-shadow-3xl hover:animate-wiggle"
@@ -85,6 +84,7 @@ export const Nav = () => {
 
               <WavyLink
                 direction="up"
+                duration={1000}
                 to="/portfolio"
                 color="#73D2DE"
                 className="ml-4 px-3 py-2 text-gray-600 font-medium rounded-md ease-in-out duration-150 hover:transform hover:scale-110 hover:drop-shadow-3xl hover:animate-wiggle"

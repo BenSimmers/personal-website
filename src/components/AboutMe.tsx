@@ -10,7 +10,7 @@ const features: Features[] = [
   {
     name: "My Interests",
     description:
-      "Games, programming, solving interesting problems, reading, football, film",
+      "Games, programming, solving interesting problems, reading, football, film, rock climbing, bouldering",
   },
   {
     name: "Skills",
@@ -23,45 +23,46 @@ const features: Features[] = [
   },
 ];
 
-const introduction =
-  "I'm a full-stack web developer from Brisbane, Australia with a passion for learning and building new things. Currently I'm enrolled at QUT while studying a Bachelor of Information Technology, majoring in Computer Science with a minor in IoT/Mobile Technologies.";
+const introduction: string =
+  "I'm a full-stack web developer from Brisbane, Australia with a passion for learning and building new things. In the tech realm, I dance with TypeScript, serenade React, and juggle Redux among others like it's a circus act. But hey, I also like to keep it old school with some low-level C programming – because who doesn't love a bit of nostalgia mixed with a touch of insanity? Currently, I'm on a quest to conquer the world of Go during my spare moments.";
+
+const other: string =
+  "In my non-tech life, I'm a caffeine-fueled spider scaling cliffs and boulders, occasionally taking leisurely hikes. I'm a laid-back soccer enthusiast, casually playing and passionately watching. As a film buff who almost became a film student, I opted for making sarcastic movie comments instead, I've settled for being a film buff, bringing my critical eye and love for the silver screen to every conversation. I'm just your friendly neighborhood tech guy, building and learning new things.";
+/**
+ * In the vast wilderness of my non-tech existence, I enjoy rock climbing and bouldering, like a spider on caffeine sometimes with the occasional hike thrown in for good measure.
+ * When I'm not pretending to be a human mountain goat, I switch gears to the world of football (soccer)
+ */
 
 export default function AboutMe() {
   return (
-    <div className="">
-      <h2 className="text-3xl font-bold tracking-tight text-white-900 sm:text-5xl">
-        About Me
-      </h2>
-      <p className="mt-4 text-lg text-black rounded outline outline-[3px] p-3 bg-white outline-black ">
-        <div style={{ paddingTop: "10px" }} />
-        {introduction}
-        <div style={{ paddingTop: "20px" }} />
-        <iframe
-          className="rounded"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d453481.3003842029!2d152.71301028197632!3d-27.381253325856218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b91579aac93d233%3A0x402a35af3deaf40!2sBrisbane%20QLD!5e0!3m2!1sen!2sau!4v1669720558116!5m2!1sen!2sau"
-          height="450"
-          width="100%"
-          style={{ border: 0 }}
-          loading="lazy"
-        ></iframe>
-      </p>
+    <>
+      <h1 className="text-4xl font-bold text-center">About Me</h1>
 
-      <div className="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 lg:grid-cols-4">
-        {features.map((feature) => (
-          <div
-            key={feature.name}
-            className="p-6 text-center outline outline-[3px] rounded bg-[#726CE5] hover:transition-in-out hover:bg-[#a6a2f5]"
-          >
-            <h5 className="mb-2 text-3xl font-bold text-black dark:text-black py-3">
-              {feature.name}
-            </h5>
-            <p className="text-3xl text-black sm:text-lg dark:text-black py-3">
-              {feature.description}
-            </p>
-          </div>
-        ))}
+      <div className="flex flex-col items-center justify-center mt-10">
+        <div className="w-full bg-white rounded-lg shadow-md p-6">
+          <p>{introduction}</p>
+          {/* add a separater */}
+          <div className="bg-gray-300 h-px mt-7 mb-7" />
+          <p>{other}</p>
+        </div>
+
+        <div className="w-full bg-white rounded-lg shadow-md p-6 mt-10 mb-10">
+          <ul className="divide-y divide-gray-200">
+            {features.map((feature) => (
+              <li key={feature.name} className="py-4">
+                <div className="flex space-x-3">
+                  <div className="flex-1 space-y-1">
+                    <h3 className="text-lg leading-6 font-medium text-gray-900">
+                      {feature.name}
+                    </h3>
+                    <p className="text-gray-500">{feature.description}</p>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-      <div style={{ paddingTop: "20px" }} />
-    </div>
+    </>
   );
 }

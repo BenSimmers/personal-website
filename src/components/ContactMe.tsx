@@ -14,7 +14,7 @@ function ContactForm() {
 
   return (
     <div className="container mx-auto px-4" style={{ height: "80vh" }}>
-      <h1 className="text-3xl font-bold text-center">Contact Me</h1>
+      <h1 className="text-4xl font-bold text-center">Contact Me</h1>
       <p className="text-center">
         Please feel free to reach out to me for any reason!
       </p>
