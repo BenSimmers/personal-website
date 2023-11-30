@@ -3,11 +3,6 @@ import AboutMe from "../components/AboutMe";
 import Title from "../components/Title";
 
 const Wrapper = () => (
-  // <div className="container mx-auto px-4">
-  //   <Title />
-  // </div>
-
-  //center the div
   <div className="container mx-auto px-4 flex justify-center" style={{height: "80vh"}}>
     <div className="flex justify-center flex-col">
       <Title />

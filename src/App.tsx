@@ -153,11 +153,10 @@ export const Nav = () => {
         className={`${isOpen ? "block" : "hidden"} md:hidden`}
         id="mobile-menu"
       >
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 space-x-4">
           <WavyLink
             to="/"
             color="#FFBC42"
-            className="ml-4 px-3 py-2 text-gray-600 font-medium rounded-md ease-in-out duration-150 hover:transform hover:scale-110 hover:drop-shadow-3xl hover:animate-wiggle"
           >
             Home
           </WavyLink>
@@ -165,15 +164,22 @@ export const Nav = () => {
             direction="up"
             to="/about"
             color="#73D2DE"
-            className="ml-4 px-3 py-2 text-gray-600 font-medium rounded-md ease-in-out duration-150 hover:transform hover:scale-110 hover:drop-shadow-3xl hover:animate-wiggle"
           >
             About
           </WavyLink>
+
+          <WavyLink
+            direction="up"
+            to="/portfolio"
+            color="#73D2DE"
+          >
+            Portfolio
+          </WavyLink>
+
           <WavyLink
             duration={1000}
             to="/contact"
             color="#C7EFCF"
-            className="ml-4 px-3 py-2 text-gray-600 font-medium rounded-md ease-in-out duration-150 hover:transform hover:scale-110 hover:drop-shadow-3xl hover:animate-wiggle"
           >
             Contact
           </WavyLink>
