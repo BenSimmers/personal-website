@@ -1,39 +1,95 @@
-import React from "react";
-import "../../src/App.css";
+import React, { Fragment, useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
+import { Dialog, Transition } from "@headlessui/react";
 
-export default function ContactMe() {
+function ContactForm() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [state, handleSubmit] = useForm(
+    import.meta.env.VITE_FORMSPREE_ENDPOINT
+  );
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
   return (
-    <>
-      <div style={{ paddingTop: 30 }} />
-      <h2 className="text-3xl font-bold tracking-tight text-white-900 sm:text-5xl">
-        Contact Me
-      </h2>
-      <div style={{ paddingTop: 30 }} />
-      {/* 3 columns */}
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-        {/* Column 1 */}
-        <div className="col-span-1">
-          <a href="https://github.com/BenSimmers" className="button-contact">
-            Github
-          </a>
-        </div>
-        {/* Column 2 */}
-        <div className="col-span-1">
-          <a
-            href="https://www.linkedin.com/in/benjamin-simmers-45385b236/"
-            className="button-contact"
+    <div className="container mx-auto px-4" style={{ height: "80vh" }}>
+      <h1 className="text-3xl font-bold text-center">Contact Me</h1>
+      <p className="text-center">
+        Please feel free to reach out to me for any reason!
+      </p>
+      <div className="flex items-center justify-center mt-10">
+        <form
+          onSubmit={handleSubmit}
+          className="w-full max-w-lg bg-white rounded-lg shadow-md p-6"
+        >
+          <div className="mb-4">
+            <label
+              htmlFor="name"
+              className="block text-sm font-medium text-gray-600"
+            >
+              Name
+            </label>
+            <input
+              id="name"
+              type="name"
+              name="name"
+              className="mt-1 p-2 w-full border rounded-md bg-gray-100"
+            />
+            <ValidationError prefix="Name" field="name" errors={state.errors} />
+          </div>
+
+          <div className="mb-4">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-600"
+            >
+              Email Address
+            </label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              className="mt-1 p-2 w-full border rounded-md bg-gray-100"
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
+          </div>
+
+          <div className="mb-4">
+            <label
+              htmlFor="message"
+              className="block text-sm font-medium text-gray-600"
+            >
+              Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              className="mt-1 p-2 w-full border rounded-md bg-gray-100"
+            />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
+          </div>
+
+          <button
+            type="submit"
+            disabled={state.submitting}
+            onClick={openModal}
+            className="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
           >
-            LinkedIn
-          </a>
-        </div>
-        {/* Column 3 */}
-        <div className="col-span-1">
-          <a href="mailto:mailto:bej1380@gmail.com" className="button-contact">
-            Email
-          </a>
-        </div>
-        <div style={{ paddingTop: "20px" }} />
+            Submit
+          </button>
+        </form>
       </div>
-    </>
+    </div>
   );
 }
+
+export default ContactForm;

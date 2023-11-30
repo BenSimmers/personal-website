@@ -1,4 +1,4 @@
-export default function Portfolio() {
+export default function Projects() {
   type Projects = {
     id: number;
     title: string;
@@ -30,15 +30,31 @@ export default function Portfolio() {
       id: 4,
       title: "API development tool",
       description: "A tool to help developers test their API's",
-      url: "https://api-auditor.vercel.app/",
+      url: "https://rest-client.vercel.app/",
     },
 
     {
       id: 5,
+      title: "Sudoku",
+      description: "Play a game of Sudoku",
+      url: "https://sudoku-chi-blush.vercel.app/",
+    },
+
+    {
+      id: 6,
       title: "Another AI tool",
-      description: "AI Image generation tool",
+      description: "AI Image generation tool (expired tool)",
       url: "https://another-ai-tool.vercel.app/",
     },
+
+    {
+      id: 7,
+      title: "GraphQL File Sender",
+      description: "A tool to send files to and from a GraphQL server",
+      url: "https://www.npmjs.com/package/graphql-file-sender",
+    }
+
+
   ];
 
   return (

@@ -1,6 +1,5 @@
 import React from "react";
 
-//import book icon from heroicons
 import { BookOpenIcon } from "@heroicons/react/outline";
 
 export default function TimeLine() {
@@ -26,7 +25,6 @@ export default function TimeLine() {
       title: "Working as a Full Stack Developer",
       date: "June 2022 - Present",
       content: "Junior developer and UX designer at TestLab360. Contributing and maintaining full stack applications with various technologies"
-      
     },
   ];
   return(
