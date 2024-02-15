@@ -1,11 +1,11 @@
-export default function Projects() {
-  type Projects = {
-    id: number;
-    title: string;
-    description: string;
-    url: string;
-  };
+type Projects = {
+  id: number;
+  title: string;
+  description: string;
+  url: string;
+};
 
+export default function Projects() {
   const projects: Projects[] = [
     {
       id: 1,
@@ -52,24 +52,22 @@ export default function Projects() {
       title: "GraphQL File Sender",
       description: "A tool to send files to and from a GraphQL server",
       url: "https://www.npmjs.com/package/graphql-file-sender",
-    }
+    },
 
-
+    {
+      id: 8,
+      title: "Virtual DOM Renderer",
+      description:
+        "My own implementation of a virtual DOM renderer onto the real DOM",
+      url: "https://github.com/BenSimmers/virtual-dom-renderer",
+    },
   ];
 
   return (
     <>
       <main className="mt-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
         <div className="lg:text-center">
-          <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
-            Portfolio
-          </h2>
-          <p className="mt-2 text-3xl leading-8 tracking-tight text-gray-900 sm:text-4xl">
-            Projects
-          </p>
-          <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            A selection of projects I have worked on.
-          </p>
+          <h1 className="text-4xl font-bold text-center">Portfolio</h1>
         </div>
 
         <div className="mt-10 lg:ml-40">
@@ -112,11 +110,6 @@ export default function Projects() {
               </li>
             ))}
           </ul>
-        </div>
-        <div className="lg:text-center">
-          <p className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
-            More to come!
-          </p>
         </div>
       </main>
     </>

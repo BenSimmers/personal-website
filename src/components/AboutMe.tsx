@@ -41,7 +41,6 @@ export default function AboutMe() {
       <div className="flex flex-col items-center justify-center mt-10">
         <div className="w-full bg-white rounded-lg shadow-md p-6">
           <p>{introduction}</p>
-          {/* add a separater */}
           <div className="bg-gray-300 h-px mt-7 mb-7" />
           <p>{other}</p>
         </div>
