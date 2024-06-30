@@ -41,13 +41,6 @@ export default function Projects() {
     },
 
     {
-      id: 6,
-      title: "Another AI tool",
-      description: "AI Image generation tool (expired tool)",
-      url: "https://another-ai-tool.vercel.app/",
-    },
-
-    {
       id: 7,
       title: "GraphQL File Sender",
       description: "A tool to send files to and from a GraphQL server",
