@@ -8,7 +8,7 @@ const Title = () => {
         2000,
         `I work as a full stack developer`,
         2000,
-        `and study Computer Science`,
+        `and a Comp Sci graduate`,
         2000,
       ]}
       wrapper="div"
