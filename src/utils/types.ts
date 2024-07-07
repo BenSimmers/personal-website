@@ -1,35 +1,54 @@
-export type Features = {
+/**
+ * @description: Types for the project
+ * @type: Types
+ * @exports: Features, Projects, Skills, TimeLineItems, TitleSequence, Introduction, NavLink, NavProps
+ */
+
+type Features = {
   name: string;
   description: string;
 };
 
-export type Projects = {
+type Projects = {
   id: number;
   title: string;
   description: string;
   url: string;
 };
 
-export type Skills = {
+type Skills = {
   title: string;
   description: string;
 };
 
 
-export type TimeLineItems = {
+type TimeLineItems = {
   title: string;
   date: string;
   content: string;
 };
 
+type SequenceArray = string | number;
 
-export type SequenceArray = string | number;
-
-export type TitleSequence = {
+type TitleSequence = {
   sequence: SequenceArray[];
 };
 
-export type Introduction = {
+type Introduction = {
   introduction: string;
   description: string;
 };
+
+type NavLink = {
+  to: string;
+  direction?: "up" | "down" | "left" | "right";
+  color: string;
+  text: string;
+};
+
+type NavProps = {  
+  isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+export type { Features, Projects, Skills, TimeLineItems, TitleSequence, Introduction, NavLink, NavProps };

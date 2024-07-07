@@ -17,3 +17,5 @@ export const NotFound: React.FunctionComponent = () => (
     </main>
   </div>
 );
+
+export default NotFound;

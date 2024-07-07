@@ -40,3 +40,5 @@ export const Footer: React.FunctionComponent = () => (
     </div>
   </footer>
 );
+
+export default Footer;

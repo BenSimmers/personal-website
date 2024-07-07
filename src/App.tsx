@@ -1,21 +1,18 @@
-import { Suspense, useState } from "react";
+import React, { SetStateAction, Suspense, useState } from "react";
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import { WavyContainer, WavyLink } from "react-wavy-transitions";
-import About from "./routes/About";
-import Home from "./routes/Home";
-import Contact from "./routes/Contact";
-import Portfolio from "./routes/Portfolio";
-import { NotFound } from "./components/404";
-import { Nav } from "./utils/Navigation";
-import { Footer } from "./utils/Footer";
+const About = React.lazy(() => import("./routes/About"));
+const Home = React.lazy(() => import("./routes/Home"));
+const Contact = React.lazy(() => import("./routes/Contact"));
+const Portfolio = React.lazy(() => import("./routes/Portfolio"));
+const NotFound = React.lazy(() => import("./components/404"));
+const Nav = React.lazy(() => import("./utils/Navigation"));
+const Footer = React.lazy(() => import("./utils/Footer"));
 
-export const Main: React.FunctionComponent = () => (
-  <main>
-    <Outlet />
-  </main>
-);
 
-function App() {
+
+const App: React.FunctionComponent<{}> = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <BrowserRouter>
@@ -24,10 +21,12 @@ function App() {
           <Route
             path="/"
             element={
-              <>
-                <Nav />
-                <Main />
-              </>
+              <React.Fragment>
+                <Nav isOpen={isOpen} setIsOpen={setIsOpen} />
+                <main>
+                  <Outlet />
+                </main>
+              </React.Fragment>
             }
           >
             <Route index element={<Home />} />

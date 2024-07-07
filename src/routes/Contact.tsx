@@ -1,4 +1,5 @@
 import { ContactForm } from "../components/ContactMe";
-const Wrapper = () => <ContactForm />;
+
+const Wrapper: React.FunctionComponent = () => <ContactForm />;
 
 export default Wrapper;

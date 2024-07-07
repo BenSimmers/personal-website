@@ -1,5 +1,5 @@
 import { AboutMe } from "../components/AboutMe";
 
-const Wrapper = () => <AboutMe />;
+const Wrapper: React.FunctionComponent = () => <AboutMe />;
 
 export default Wrapper;
