@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import { content } from "./index";
-import {
+import type {
   Features,
   Projects,
   Skills,
