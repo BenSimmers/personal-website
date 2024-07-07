@@ -1,6 +1,5 @@
 import React, { Fragment, useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
-import { Dialog, Transition } from "@headlessui/react";
 
 function ContactForm() {
   const [isOpen, setIsOpen] = useState(false);

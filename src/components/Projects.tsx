@@ -1,60 +1,9 @@
-type Projects = {
-  id: number;
-  title: string;
-  description: string;
-  url: string;
-};
+import React from "react";
+import { useStore } from "../store/store";
+import { useShallow } from "zustand/react/shallow";
 
 export default function Projects() {
-  const projects: Projects[] = [
-    {
-      id: 1,
-      title: "Personal Website",
-      description: "This website you are on right now!",
-      url: "https://bensimmers.dev/",
-    },
-    {
-      id: 2,
-      title: "TestLab360",
-      description: "The new TestLab360 client website",
-      url: "https://www.testlab360.com.au/",
-    },
-    {
-      id: 3,
-      title: "VFX Portfolio",
-      description: "A portfolio website VFX work as a hobby",
-      url: "https://vfx-portfolio.vercel.app/",
-    },
-
-    {
-      id: 4,
-      title: "API development tool",
-      description: "A tool to help developers test their API's",
-      url: "https://rest-client.vercel.app/",
-    },
-
-    {
-      id: 5,
-      title: "Sudoku",
-      description: "Play a game of Sudoku",
-      url: "https://sudoku-chi-blush.vercel.app/",
-    },
-
-    {
-      id: 7,
-      title: "GraphQL File Sender",
-      description: "A tool to send files to and from a GraphQL server",
-      url: "https://www.npmjs.com/package/graphql-file-sender",
-    },
-
-    {
-      id: 8,
-      title: "Virtual DOM Renderer",
-      description:
-        "My own implementation of a virtual DOM renderer onto the real DOM",
-      url: "https://github.com/BenSimmers/virtual-dom-renderer",
-    },
-  ];
+  const projects = useStore(useShallow((state) => state.projects));
 
   return (
     <>

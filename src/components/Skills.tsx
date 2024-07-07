@@ -1,23 +1,10 @@
 import React from "react";
+import { useStore } from "../store/store";
+import { useShallow } from 'zustand/react/shallow'
 
-
-
-export default function Skills(props: any) {
-  const skills = [
-    {
-      title: "Languages",
-      description: "Python, Java, C#, C, JavaScript, HTML, CSS, TypeScript, SQL, PostGreSQL, SQLite",
-    },
-    {
-      title: "Frameworks",
-      description: "React.js, React Native, Flask, Jinja, Tailwind CSS, Bootstrap, Express.js, Node, Material UI",
-    },
-    {
-      title: "Tools",
-      description: "Git, GitHub, Docker, AWS, Figma, Azure, Heroku, Linux, Windows, Mac",
-    },
-  ];
-
+export const Skills: React.FunctionComponent= () => {
+  const skills = useStore(useShallow(state => state.skills))
+  console.log(skills)
   return (
     <>
       <h2 className="text-3xl font-bold tracking-tight text-white-900 sm:text-5xl">My Skills</h2>

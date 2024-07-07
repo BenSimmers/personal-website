@@ -2,31 +2,13 @@ import React from "react";
 
 import { BookOpenIcon } from "@heroicons/react/outline";
 
+import { useStore } from "../store/store";
+import { useShallow } from "zustand/react/shallow";
+
 export default function TimeLine() {
 
-  type TimeLineItems = {
-    title: string;
-    date: string;
-    content: string;
-  };
+  const timeLineItems = useStore(useShallow((state) => state.timelineItems));
 
-  const timeLineItems : TimeLineItems[] = [
-    {
-      title: "Duty Manager & Retail Assistant",
-      date: "May 2020 - January 2023",
-      content: "Stock management, cash register management includes balancing end of day trade. Customer Service,Training new staff Manager Duties",
-    },
-    {
-      title: "Began studying Computer Science",
-      date: "March 2021 - Present",
-      content: "Bachelors degree of Information Technology majoring in Computer Science and IoT mobile technologies at the Queensland University of Technology."
-    },
-    {
-      title: "Working as a Full Stack Developer",
-      date: "June 2022 - Present",
-      content: "Junior developer and UX designer at TestLab360. Contributing and maintaining full stack applications with various technologies"
-    },
-  ];
   return(
     <div>
     <h2 className="text-3xl font-bold tracking-tight text-white-900 sm:text-5xl">My Timeline</h2>
