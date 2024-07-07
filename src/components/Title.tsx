@@ -21,7 +21,7 @@ export const titleArray: TitleSequence = {
 };
 
 
-const Title = () => {
+export const Title: React.FunctionComponent = () => {
   return (
     <TypeAnimation
       sequence={titleArray.sequence}
@@ -32,5 +32,3 @@ const Title = () => {
     />
   );
 };
-
-export default Title;

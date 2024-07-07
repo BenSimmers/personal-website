@@ -7,7 +7,7 @@ export default function Projects() {
 
   return (
     <>
-      <main className="mt-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
+      <main className="mt-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
           <h1 className="text-4xl font-bold text-center">Portfolio</h1>
         </div>

@@ -78,20 +78,30 @@ export const content = {
 
   timeLineItems: [
     {
-      title: "Duty Manager & Retail Assistant",
-      date: "May 2020 - January 2023",
-      content: "Stock management, cash register management includes balancing end of day trade. Customer Service,Training new staff Manager Duties",
-    },
-    {
       title: "Began studying Computer Science",
-      date: "March 2021 - Present",
+      date: "March 2021 - December 2023",
       content: "Bachelors degree of Information Technology majoring in Computer Science and IoT mobile technologies at the Queensland University of Technology."
     },
     {
-      title: "Working as a Full Stack Developer",
-      date: "June 2022 - Present",
+      title: "Volunteer Software Developer",
+      date: "March 2023 - November 2023",
+      content: "Apart of the QUT Capstone project, developing a full stack application for a real-world client in the health industry."
+    },
+    {
+      title: "Graduated from QUT",
+      date: "December 2023",
+      content: "Graduated with a Bachelor of Information Technology majoring in Computer Science and IoT mobile technologies, with Distinction"
+    },
+    {
+      title: "Software Developer",
+      date: "June 2022 - March 2024",
       content: "Junior developer and UX designer at TestLab360. Contributing and maintaining full stack applications with various technologies"
     },
+    {
+      title: "Software Developer",
+      date: "April 2024 - Present",
+      content: "Software developer at Technology One, Contributing and maintaining full stack DXP applications with various technologies"  
+    }
   ],
 
   skills: [

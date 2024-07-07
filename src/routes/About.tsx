@@ -1,9 +1,5 @@
-import AboutMe from "../components/AboutMe";
+import { AboutMe } from "../components/AboutMe";
 
-const Wrapper = () => (
-  <>
-    <AboutMe />
-  </>
-);
+const Wrapper = () => <AboutMe />;
 
 export default Wrapper;

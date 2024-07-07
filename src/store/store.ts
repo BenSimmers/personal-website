@@ -1,44 +1,13 @@
 import { create } from "zustand";
 import { content } from "./index";
-
-type Features = {
-  name: string;
-  description: string;
-};
-
-type Projects = {
-  id: number;
-  title: string;
-  description: string;
-  url: string;
-};
-
-export type Skills = {
-  title: string;
-  description: string;
-};
-
-
-type TimeLineItems = {
-  title: string;
-  date: string;
-  content: string;
-};
-
-
-export type SequenceArray = string | number;
-
-export type TitleSequence = {
-  sequence: SequenceArray[];
-};
-
-export type Introduction = {
-  introduction: string;
-  description: string;
-};
-
-
-
+import {
+  Features,
+  Projects,
+  Skills,
+  TimeLineItems,
+  TitleSequence,
+  Introduction,
+} from "../utils/types";
 
 export type Store = {
   features: Features[];

@@ -1,15 +1,19 @@
 import React, { Fragment, useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 
-function ContactForm() {
+export const ContactForm: React.FunctionComponent = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [state, handleSubmit] = useForm(
     import.meta.env.VITE_FORMSPREE_ENDPOINT
   );
 
-  function openModal() {
-    setIsOpen(true);
-  }
+  // function openModal() {
+  //   setIsOpen(true);
+  // }
+
+  const openModal = React.useCallback(() => {
+    setIsOpen((prev) => !prev);
+  }, []);
 
   return (
     <div className="container mx-auto px-4" style={{ height: "80vh" }}>
@@ -89,6 +93,4 @@ function ContactForm() {
       </div>
     </div>
   );
-}
-
-export default ContactForm;
+};

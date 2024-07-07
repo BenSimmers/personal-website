@@ -1,45 +1,15 @@
 import React from "react";
 import { useStore } from "../store/store";
 import { useShallow } from "zustand/react/shallow";
-// type Features = {
-//   name: string;
-//   description: string;
-// };
-// export type Introduction = {
-//   introduction: string;
-//   description: string;
-// };
+import { TimeLine } from "./TimeLine";
 
-// const Introduction: Introduction = {
-//   introduction: "I'm a full-stack web developer from Brisbane, Australia with a passion for learning and building new things. In the tech realm, I dance with TypeScript, serenade React, and juggle Redux among others like it's a circus act. But hey, I also like to keep it old school with some low-level C programming – because who doesn't love a bit of nostalgia mixed with a touch of insanity? Currently, I'm on a quest to conquer the world of Go during my spare moments.",
-//   description: "In my non-tech life, I'm a caffeine-fueled spider scaling rock climbing and bouldering walls, occasionally taking leisurely hikes. When I'm not pretending to be a human mountain goat, I'm a laid-back soccer enthusiast, casually playing and passionately watching. As a film buff who almost became a film student, I opted for making sarcastic movie comments instead, I've settled for being a film buff, bringing my critical eye and love for the silver screen to every conversation. I'm just your friendly neighborhood tech guy, building and learning new things.",
-// };
-
-
-// const features: Features[] = [
-//   { name: "Currently Learning", description: "Go, Rust" },
-//   {
-//     name: "My Interests",
-//     description:
-//       "Games, programming, solving interesting problems, reading, football, film, rock climbing, bouldering",
-//   },
-//   {
-//     name: "Skills",
-//     description:
-//       "JavaScript, TypeScript, Python, C#, C, HTML, CSS, Docker, Git, SQL, React, Express, PostgreSQL, AWS",
-//   },
-//   {
-//     name: "What I Plan to Learn",
-//     description: "Flutter, Swift",
-//   },
-// ];
-
-
-
-
-export default function AboutMe() {
-  
-  const { Introduction, features } = useStore(useShallow((state) => ({ Introduction: state.introduction, features: state.features })));
+export const AboutMe: React.FunctionComponent = () => {
+  const { Introduction, features } = useStore(
+    useShallow((state) => ({
+      Introduction: state.introduction,
+      features: state.features,
+    }))
+  );
 
   return (
     <React.Fragment>
@@ -51,6 +21,8 @@ export default function AboutMe() {
           <div className="bg-gray-300 h-px mt-7 mb-7" />
           <p>{Introduction.description}</p>
         </div>
+
+        <TimeLine />
 
         <div className="w-full bg-white rounded-lg shadow-md p-6 mt-10 mb-10">
           <ul className="divide-y divide-gray-200">
@@ -71,4 +43,4 @@ export default function AboutMe() {
       </div>
     </React.Fragment>
   );
-}
+};
