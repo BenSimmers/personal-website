@@ -73,7 +73,7 @@ export const Nav: React.FunctionComponent<NavProps> = ({ isOpen, setIsOpen }) =>
       </div>
     </div>
     <div className={`${isOpen ? "block" : "hidden"} md:hidden`} id="mobile-menu">
-      <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+      <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 space-x-3">
         {navLinks.map(({ to, direction, color, text }) => (
           <WavyLink key={to} to={to} direction={direction} color={color}>
             {text}
