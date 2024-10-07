@@ -100,7 +100,7 @@ export const content = {
     {
       title: "Software Developer",
       date: "April 2024 - Present",
-      content: "Software developer at Technology One, Contributing and maintaining full stack DXP applications with various technologies"  
+      content: "Software developer at Technology One, Contributing and maintaining full stack applications with various technologies"  
     }
   ],
 
