@@ -1,6 +1,7 @@
 import React, { SetStateAction, Suspense, useState } from "react";
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import { WavyContainer, WavyLink } from "react-wavy-transitions";
+
 const About = React.lazy(() => import("./routes/About"));
 const Home = React.lazy(() => import("./routes/Home"));
 const Contact = React.lazy(() => import("./routes/Contact"));

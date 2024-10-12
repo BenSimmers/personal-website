@@ -1,3 +1,5 @@
+import { Description } from "@headlessui/react/dist/components/description/description";
+
 export const content = {
   titleArray: {
     sequence: [
@@ -10,8 +12,8 @@ export const content = {
     ],
   },
   Introduction: {
-    introduction: "I'm a full-stack web developer from Brisbane, Australia with a passion for learning and building new things. In the tech realm, I dance with TypeScript, serenade React, and juggle Redux among others like it's a circus act. But hey, I also like to keep it old school with some low-level C programming – because who doesn't love a bit of nostalgia mixed with a touch of insanity? Currently, I'm on a quest to conquer the world of Go during my spare moments.",
-    description: "In my non-tech life, I'm a caffeine-fueled spider scaling rock climbing and bouldering walls, occasionally taking leisurely hikes. When I'm not pretending to be a human mountain goat, I'm a laid-back soccer enthusiast, casually playing and passionately watching. As a film buff who almost became a film student, I opted for making sarcastic movie comments instead, I've settled for being a film buff, bringing my critical eye and love for the silver screen to every conversation. I'm just your friendly neighborhood tech guy, building and learning new things.",
+    introduction: "I'm a full-stack web developer from Brisbane, Australia with a passion for learning and building new things. In the tech realm, I use with TypeScript, C#, React, Redux among others. But hey, I also like to keep it old school with some low-level C programming – because who doesn't love a bit of nostalgia? Currently, I'm on a quest to conquer the world of Go during my spare moments.",
+    description: "In my non-tech life, I enjoy rock climbing and bouldering walls, occasionally taking leisurely hikes. I'm a laid-back soccer enthusiast, casually playing and passionately watching. As a film buff who almost became a film student, but I've settled for being a film buff. I'm just your friendly neighborhood tech guy, building and learning new things.",
   },
   features: [
     { name: "Currently Learning", description: "Go, Rust" },
@@ -33,47 +35,41 @@ export const content = {
   projects: [
     {
       id: 1,
-      title: "Personal Website",
-      description: "This website you are on right now!",
-      url: "https://bensimmers.dev/",
-    },
-    {
-      id: 2,
-      title: "TestLab360",
-      description: "The new TestLab360 client website",
-      url: "https://www.testlab360.com.au/",
-    },
-    {
-      id: 3,
-      title: "VFX Portfolio",
-      description: "A portfolio website VFX work as a hobby",
-      url: "https://vfx-portfolio.vercel.app/",
-    },
-    {
-      id: 4,
       title: "API development tool",
       description: "A tool to help developers test their API's",
       url: "https://rest-client.vercel.app/",
     },
     {
-      id: 5,
+      id: 2,
       title: "Sudoku",
       description: "Play a game of Sudoku",
       url: "https://sudoku-chi-blush.vercel.app/",
     },
     {
-      id: 7,
+      id: 3,
       title: "GraphQL File Sender",
       description: "A tool to send files to and from a GraphQL server",
       url: "https://www.npmjs.com/package/graphql-file-sender",
     },
     {
-      id: 8,
+      id: 4,
       title: "Virtual DOM Renderer",
       description:
         "My own implementation of a virtual DOM renderer onto the real DOM",
       url: "https://github.com/BenSimmers/virtual-dom-renderer",
     },
+    {
+      id: 5,
+      title: "Windows 98 UI component library",
+      Description: "A react component library to mimic the Windows 98 UI",
+      url: "https://github.com/BenSimmers/windows-98-ui"
+    },
+    {
+      id: 6,
+      title: "Simple Diagnostics TUI",
+      description: "Diagnostics command line tool for multiple platforms",
+      url: "https://github.com/BenSimmers/diagnostic-tui"
+    }
   ],
 
   timeLineItems: [
