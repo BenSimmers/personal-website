@@ -26,7 +26,7 @@ export type Store = {
 
 export const useStore = create<Store>((set) => ({
   features: content.features,
-  projects: content.projects,
+  projects: content.projects as Projects[],
   skills: content.skills,
   timelineItems: content.timeLineItems,
   titleArray: content.titleArray,

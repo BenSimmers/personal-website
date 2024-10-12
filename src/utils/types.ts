@@ -1,7 +1,7 @@
 /**
  * @description: Types for the project
  * @type: Types
- * @exports: Features, Projects, Skills, TimeLineItems, TitleSequence, Introduction, NavLink, NavProps, Project
+ * @exports: Features, Projects, Skills, TimeLineItems, TitleSequence, Introduction, NavLink, NavProps
  */
 
 type Features = {
@@ -20,7 +20,6 @@ type Skills = {
   title: string;
   description: string;
 };
-
 
 type TimeLineItems = {
   title: string;
@@ -46,17 +45,18 @@ type NavLink = {
   text: string;
 };
 
-type NavProps = {  
+type NavProps = {
   isOpen: boolean;
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-
-type Project = {
-  id: number;
-  title: string;
-  description: string;
-  url: string;
+export type {
+  Features,
+  Projects,
+  Skills,
+  TimeLineItems,
+  TitleSequence,
+  Introduction,
+  NavLink,
+  NavProps,
 };
-
-export type { Features, Projects, Skills, TimeLineItems, TitleSequence, Introduction, NavLink, NavProps, Project };

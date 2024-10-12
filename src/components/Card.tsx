@@ -1,7 +1,7 @@
 import React from "react";
-import { Project } from "../utils/types";
+import { Projects } from "../utils/types";
 
-const Card: React.FunctionComponent<Project> = (project) => {
+const Card: React.FunctionComponent<Projects> = (project) => {
   return (
     <li key={project.id}>
       <div className="flex">

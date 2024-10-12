@@ -1,5 +1,3 @@
-import { Description } from "@headlessui/react/dist/components/description/description";
-
 export const content = {
   titleArray: {
     sequence: [
