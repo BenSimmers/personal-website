@@ -18,13 +18,12 @@ export const AboutMe: React.FunctionComponent = () => {
       <div className="flex flex-col items-center justify-center mt-10">
         <div className="w-full bg-white rounded-lg shadow-md p-6">
           <p>{Introduction.introduction}</p>
-          <div className="bg-gray-300 h-px mt-7 mb-7" />
-          <p>{Introduction.description}</p>
         </div>
 
         <TimeLine />
 
         <div className="w-full bg-white rounded-lg shadow-md p-6 mt-10 mb-10">
+          <h2 className="text-2xl font-bold text-center">The Details</h2>
           <ul className="divide-y divide-gray-200">
             {features.map((feature) => (
               <li key={feature.name} className="py-4">

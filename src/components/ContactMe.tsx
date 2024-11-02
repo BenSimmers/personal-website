@@ -7,10 +7,6 @@ export const ContactForm: React.FunctionComponent = () => {
     import.meta.env.VITE_FORMSPREE_ENDPOINT
   );
 
-  // function openModal() {
-  //   setIsOpen(true);
-  // }
-
   const openModal = React.useCallback(() => {
     setIsOpen((prev) => !prev);
   }, []);

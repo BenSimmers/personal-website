@@ -10,8 +10,7 @@ export const content = {
     ],
   },
   Introduction: {
-    introduction: "I'm a full-stack web developer from Brisbane, Australia with a passion for learning and building new things. In the tech realm, I use with TypeScript, C#, React, Redux among others. But hey, I also like to keep it old school with some low-level C programming – because who doesn't love a bit of nostalgia? Currently, I'm on a quest to conquer the world of Go during my spare moments.",
-    description: "In my non-tech life, I enjoy rock climbing and bouldering walls, occasionally taking leisurely hikes. I'm a laid-back soccer enthusiast, casually playing and passionately watching. As a film buff who almost became a film student, but I've settled for being a film buff. I'm just your friendly neighborhood tech guy, building and learning new things.",
+    introduction: "I’m a full-stack web developer from Brisbane, Australia, skilled in TypeScript, C#, React, and Redux, and currently learning Go. I also have experience with low-level C programming. Outside of tech, I enjoy rock climbing, hiking, playing soccer, and watching films.",
   },
   features: [
     { name: "Currently Learning", description: "Go, Rust" },
