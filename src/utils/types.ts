@@ -35,7 +35,6 @@ type TitleSequence = {
 
 type Introduction = {
   introduction: string;
-  description: string;
 };
 
 type NavLink = {
