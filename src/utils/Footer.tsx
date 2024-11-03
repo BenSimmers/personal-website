@@ -12,14 +12,6 @@ export const Footer: React.FunctionComponent = () => (
         <ul className="flex flex-wrap items-center mb-2 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400 space-x-2 rtl:space-x-reverse">
           <li>
             <a
-              href="https://www.instagram.com/ben._.simmers/"
-              className="hover:underline"
-            >
-              Instagram
-            </a>
-          </li>
-          <li>
-            <a
               href="https://www.linkedin.com/in/benjamin-simmers-developer/"
               className="hover:underline"
             >
