@@ -1,9 +1,20 @@
 import React from "react";
-import { Projects } from "../utils/types";
 
-const Card: React.FunctionComponent<Projects> = (project) => {
+interface CardProps<T> {
+  item: T;
+  renderTitle: (item: T) => React.ReactNode;
+  renderDescription: (item: T) => React.ReactNode;
+  renderLink: (item: T) => React.ReactNode;
+}
+
+const Card = <T,>({
+  item,
+  renderTitle,
+  renderDescription,
+  renderLink,
+}: CardProps<T>) => {
   return (
-    <li key={project.id}>
+    <li>
       <div className="flex">
         <div className="flex-shrink-0">
           <svg
@@ -23,17 +34,12 @@ const Card: React.FunctionComponent<Projects> = (project) => {
         </div>
         <div className="ml-4">
           <h3 className="text-lg leading-6 font-medium text-gray-900">
-            {project.title}
+            {renderTitle(item)}
           </h3>
           <p className="text-base leading-6 text-gray-500">
-            {project.description}
+            {renderDescription(item)}
           </p>
-          <a
-            href={project.url}
-            className="text-base leading-6 text-indigo-600 font-semibold hover:text-indigo-500 transition ease-in-out duration-150"
-          >
-            View
-          </a>
+          {renderLink(item)}
           <div className="mb-10" />
         </div>
       </div>
