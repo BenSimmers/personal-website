@@ -13,7 +13,7 @@ export const content = {
     introduction: "I’m a full-stack web developer from Brisbane, Australia, skilled in TypeScript, C#, React, and Redux, and currently learning Go. I also have experience with low-level C programming. Outside of tech, I enjoy rock climbing, hiking, playing soccer, and watching films.",
   },
   features: [
-    { name: "Currently Learning", description: "Go, Rust" },
+    { name: "Currently Learning", description: "Kubernetes, Rust" },
     {
       name: "My Interests",
       description:
@@ -23,10 +23,6 @@ export const content = {
       name: "Skills",
       description:
         "JavaScript, TypeScript, Python, C#, C, HTML, CSS, Docker, Git, SQL, React, Express, PostgreSQL, AWS",
-    },
-    {
-      name: "What I Plan to Learn",
-      description: "Flutter, Swift",
     },
   ],
   projects: [
