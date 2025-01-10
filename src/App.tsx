@@ -10,10 +10,8 @@ const NotFound = React.lazy(() => import("./components/404"));
 const Nav = React.lazy(() => import("./utils/Navigation"));
 const Footer = React.lazy(() => import("./utils/Footer"));
 
-
-
 const App: React.FunctionComponent<{}> = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <BrowserRouter>
@@ -64,6 +62,6 @@ const App: React.FunctionComponent<{}> = () => {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;
