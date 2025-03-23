@@ -72,6 +72,11 @@ export const content = {
       content: "Bachelors degree of Information Technology majoring in Computer Science and IoT mobile technologies at the Queensland University of Technology."
     },
     {
+      title: "Software Developer",
+      date: "June 2022 - March 2024",
+      content: "Junior developer and UX designer at TestLab360. Contributing and maintaining full stack applications with various technologies in the construction/LIMS industry."
+    },
+    {
       title: "Volunteer Software Developer",
       date: "March 2023 - November 2023",
       content: "Apart of the QUT Capstone project, developing a full stack application for a real-world client in the health industry."
@@ -79,17 +84,12 @@ export const content = {
     {
       title: "Graduated from QUT",
       date: "December 2023",
-      content: "Graduated with a Bachelor of Information Technology majoring in Computer Science and IoT mobile technologies, with Distinction"
-    },
-    {
-      title: "Software Developer",
-      date: "June 2022 - March 2024",
-      content: "Junior developer and UX designer at TestLab360. Contributing and maintaining full stack applications with various technologies"
+      content: "Graduated with a Bachelor of Information Technology majoring in Computer Science and minor IoT mobile technologies, with Distinction"
     },
     {
       title: "Software Developer",
       date: "April 2024 - Present",
-      content: "Software developer at Technology One, Contributing and maintaining full stack applications with various technologies"  
+      content: "Software developer at Technology One, Contributing and maintaining full stack applications with various technologies in the higher education sector."  
     }
   ],
 
