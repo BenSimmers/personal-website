@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { WavyLink } from "react-wavy-transitions";
 import type { NavLink, NavProps } from "./types";
 

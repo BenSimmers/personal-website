@@ -25,45 +25,6 @@ export const content = {
         "JavaScript, TypeScript, Python, C#, C, HTML, CSS, Docker, Git, SQL, React, Express, PostgreSQL, AWS",
     },
   ],
-  projects: [
-    {
-      id: 1,
-      title: "API development tool",
-      description: "A tool to help developers test their API's",
-      url: "https://rest-client.vercel.app/",
-    },
-    {
-      id: 2,
-      title: "Sudoku",
-      description: "Play a game of Sudoku",
-      url: "https://sudoku-chi-blush.vercel.app/",
-    },
-    {
-      id: 3,
-      title: "GraphQL File Sender",
-      description: "A tool to send files to and from a GraphQL server",
-      url: "https://www.npmjs.com/package/graphql-file-sender",
-    },
-    {
-      id: 4,
-      title: "Virtual DOM Renderer",
-      description:
-        "My own implementation of a virtual DOM renderer onto the real DOM",
-      url: "https://github.com/BenSimmers/virtual-dom-renderer",
-    },
-    {
-      id: 5,
-      title: "Windows 98 UI component library",
-      Description: "A react component library to mimic the Windows 98 UI",
-      url: "https://github.com/BenSimmers/windows-98-ui"
-    },
-    {
-      id: 6,
-      title: "Simple Diagnostics TUI",
-      description: "Diagnostics command line tool for multiple platforms",
-      url: "https://github.com/BenSimmers/diagnostic-tui"
-    }
-  ],
 
   timeLineItems: [
     {

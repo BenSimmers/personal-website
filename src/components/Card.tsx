@@ -7,7 +7,7 @@ export interface CardProps {
   link: string;
 }
 
-const Card: React.FunctionComponent<CardProps> = ({
+export const Card: React.FunctionComponent<CardProps> = ({
   title,
   description,
   link,
@@ -28,4 +28,3 @@ const Card: React.FunctionComponent<CardProps> = ({
   </Link>
 );
 
-export default Card;

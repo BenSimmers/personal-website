@@ -1,14 +1,17 @@
 import React from "react";
-import { useStore } from "../store/store";
-import { useShallow } from "zustand/react/shallow";
-import Card from "./Card";
-import { type Projects as ProjectType } from "../utils/types";
+import { Card } from "./Card";
 import { SkeletonCard } from "./SkeletonCard";
+import { useProjects, useProjectsActions } from "../store/projectStore";
+import { ProjectType } from "../utils/types";
 
 export const Projects: React.FunctionComponent = () => {
-  const projects: ProjectType[] = useStore(
-    useShallow((state) => state.projects)
-  );
+  const { projects } = useProjects();
+  const { fetchProjects } = useProjectsActions();
+
+  React.useEffect(() => {
+    fetchProjects();
+  }, [fetchProjects]);
+
 
   const renderItems = (projects: ProjectType[]): JSX.Element[] => {
     const items = projects.length
@@ -22,9 +25,9 @@ export const Projects: React.FunctionComponent = () => {
       >
         {item ? (
           <Card
-            title={item.title}
+            title={item.full_name}
             description={item.description}
-            link={item.url}
+            link={item.html_url}
           />
         ) : (
           <SkeletonCard num={6} />

@@ -9,12 +9,15 @@ type Features = {
   description: string;
 };
 
-type Projects = {
-  id: number;
-  title: string;
+type Repo = {
+  id?: number;
+  html_url: string;
+  full_name: string;
   description: string;
-  url: string;
+  private?: boolean;
 };
+
+type ProjectType = Repo;
 
 type Skills = {
   title: string;
@@ -51,11 +54,12 @@ type NavProps = {
 
 export type {
   Features,
-  Projects,
   Skills,
   TimeLineItems,
   TitleSequence,
   Introduction,
   NavLink,
+  Repo,
+  ProjectType,
   NavProps,
 };
