@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 
 export const ContactForm: React.FunctionComponent = () => {
@@ -7,9 +7,30 @@ export const ContactForm: React.FunctionComponent = () => {
     import.meta.env.VITE_FORMSPREE_ENDPOINT
   );
 
-  const openModal = React.useCallback(() => {
-    setIsOpen((prev) => !prev);
-  }, []);
+  useEffect(() => {
+    if (state.succeeded) {
+      setIsOpen(true);
+    }
+  }, [state.succeeded]);
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
+  if (isOpen && state.succeeded) {
+    return (
+      <div className="container mx-auto px-4 flex flex-col items-center justify-center" style={{ height: "80vh" }}>
+        <h2 className="text-2xl font-bold text-center mb-4">Thanks for your message!</h2>
+        <p className="text-center mb-4">I'll get back to you soon.</p>
+        <button
+          onClick={closeModal}
+          className="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
+        >
+          Close
+        </button>
+      </div>
+    );
+  }
 
   return (
     <div className="container mx-auto px-4" style={{ height: "80vh" }}>
@@ -31,9 +52,10 @@ export const ContactForm: React.FunctionComponent = () => {
             </label>
             <input
               id="name"
-              type="name"
+              type="text" // Changed type to "text" for name
               name="name"
               className="mt-1 p-2 w-full border rounded-md bg-gray-100"
+              required
             />
             <ValidationError prefix="Name" field="name" errors={state.errors} />
           </div>
@@ -50,6 +72,7 @@ export const ContactForm: React.FunctionComponent = () => {
               type="email"
               name="email"
               className="mt-1 p-2 w-full border rounded-md bg-gray-100"
+              required
             />
             <ValidationError
               prefix="Email"
@@ -69,6 +92,8 @@ export const ContactForm: React.FunctionComponent = () => {
               id="message"
               name="message"
               className="mt-1 p-2 w-full border rounded-md bg-gray-100"
+              rows={4} // Added rows attribute for better textarea default size
+              required
             />
             <ValidationError
               prefix="Message"
@@ -80,7 +105,6 @@ export const ContactForm: React.FunctionComponent = () => {
           <button
             type="submit"
             disabled={state.submitting}
-            onClick={openModal}
             className="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
           >
             Submit
