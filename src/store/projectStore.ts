@@ -23,7 +23,6 @@ const useProjectsStore = create<ProjectsStore>((set) => ({
             set({ loading: true, error: null });
             try {
                 const response = await fetch(
-                    // "https://api.github.com/users/BenSimmers/repos"
                     import.meta.env.VITE_GITHUB_API_URL
                 );
                 const data = await response.json();

@@ -1,5 +1,4 @@
 import { create } from "zustand";
-import { content } from "./index";
 import type {
   Features,
   Skills,
@@ -7,6 +6,7 @@ import type {
   TitleSequence,
   Introduction,
 } from "../utils/types";
+import { content } from ".";
 
 export type Store = {
   features: Features[];

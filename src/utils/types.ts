@@ -28,6 +28,7 @@ type TimeLineItems = {
   title: string;
   date: string;
   content: string;
+  icon?: React.ReactNode;
 };
 
 type SequenceArray = string | number;

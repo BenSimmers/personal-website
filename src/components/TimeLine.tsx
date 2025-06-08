@@ -21,12 +21,11 @@ export const TimeLine: React.FunctionComponent = () => {
             aria-labelledby="timeline-item"
           >
             <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-slate-400">
-              <BookOpenIcon className="w-2.5 h-2.5 text-blue-800" />
+              {item.icon ? item.icon : <BookOpenIcon className="w-2.5 h-2.5 text-blue-800" />}
             </span>
             <h3
               className="mb-1 text-lg font-semibold text-gray-900"
-              id="timeline-title"
-              aria-labelledby="timeline-title"
+              id={`timeline-title-${index}`}
             >
               {item.title}
             </h3>
@@ -39,14 +38,15 @@ export const TimeLine: React.FunctionComponent = () => {
             </time>
             <p
               className="text-base font-normal text-gray-500"
-              id="timeline-content"
-              aria-labelledby="timeline-content"
+              id={`timeline-content-${index}`}
             >
               {item.content}
             </p>
           </li>
         ))}
       </ol>
+
+     
     </div>
   );
 };

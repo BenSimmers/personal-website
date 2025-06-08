@@ -1,3 +1,5 @@
+import { AcademicCapIcon, BookOpenIcon, DesktopComputerIcon, OfficeBuildingIcon } from "@heroicons/react/outline";
+
 export const content = {
   titleArray: {
     sequence: [
@@ -30,27 +32,33 @@ export const content = {
     {
       title: "Began studying Computer Science",
       date: "March 2021 - December 2023",
-      content: "Bachelors degree of Information Technology majoring in Computer Science and IoT mobile technologies at the Queensland University of Technology."
+      content: "Bachelors degree of Information Technology majoring in Computer Science and IoT mobile technologies at the Queensland University of Technology.",
+      icon: <BookOpenIcon className="w-2.5 h-2.5 text-blue-800" />
+      ,
     },
     {
       title: "Software Developer",
       date: "June 2022 - March 2024",
-      content: "Junior developer and UX designer at TestLab360. Contributing and maintaining full stack applications with various technologies in the construction/LIMS industry."
+      content: "Junior developer and UX designer at TestLab360. Contributing and maintaining full stack applications with various technologies in the construction/LIMS industry.",
+      icon: <OfficeBuildingIcon className="w-2.5 h-2.5 text-blue-800" />,
     },
     {
       title: "Volunteer Software Developer",
       date: "March 2023 - November 2023",
-      content: "Apart of the QUT Capstone project, developing a full stack application for a real-world client in the health industry."
+      content: "Apart of the QUT Capstone project, developing a full stack application for a real-world client in the health industry.",
+      icon: <DesktopComputerIcon className="w-2.5 h-2.5 text-blue-800" />
     },
     {
       title: "Graduated from QUT",
       date: "December 2023",
-      content: "Graduated with a Bachelor of Information Technology majoring in Computer Science and minor IoT mobile technologies, with Distinction"
+      content: "Graduated with a Bachelor of Information Technology majoring in Computer Science and minor IoT mobile technologies, with Distinction.",
+      icon: <AcademicCapIcon className="w-2.5 h-2.5 text-blue-800" />
     },
     {
       title: "Software Developer",
       date: "April 2024 - Present",
-      content: "Software developer at Technology One, Contributing and maintaining full stack applications with various technologies in the higher education sector."  
+      content: "Software developer at Technology One, Contributing and maintaining full stack applications with various technologies in the higher education sector.",
+      icon: <OfficeBuildingIcon className="w-2.5 h-2.5 text-blue-800" />
     }
   ],
 
